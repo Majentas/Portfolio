@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&display=swap");
+html {
+  background-color: #E3BAD5;
+  overflow: hidden visible;
+  --res: calc(0.01 * 10vmin);
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+}
+
+.header-port {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  margin-right: 15px;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main,
+#collapse {
+  transition: margin-left .5s;
+  padding: 20px;
+  -webkit-transition: margin-left .5s;
+  -moz-transition: margin-left .5s;
+  -ms-transition: margin-left .5s;
+  -o-transition: margin-left .5s;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.inline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .nom {
+  margin-right: 15px;
+}
+
+.content-h2 {
+  font-size: calc(36 * var(--res));
+}
+
+.parentImages .divImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.parentImages .divImages .images {
+  width: 320px;
+  height: 175px;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.parentImages .divImages1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.parentImages .divImages1 .images1 {
+  width: 320px;
+  height: 175px;
+  background-color: white;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #BE9CC7;
+}
+
+.footer p {
+  padding: 0 0 0 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */

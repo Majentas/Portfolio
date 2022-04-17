@@ -1,0 +1,39 @@
+@mixin flexMid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@mixin positionner($x: 50%, $y: 50%) {
+    position: absolute; 
+    left: $x;
+    top: $y;
+    transform: translate(-$x, -$y);
+    -webkit-transform: translate(-$x, -$y);
+    -moz-transform: translate(-$x, -$y);
+    -ms-transform: translate(-$x, -$y);
+    -o-transform: translate(-$x, -$y);
+}
+
+@mixin random-blob($desc...) {
+    @for $i from 0 to length($desc) {
+        #{nth($desc, $i + 1)}{
+        position: absolute;
+        left: percentage(random(100))/100;
+        top: percentage(random(100))/100;
+        background-image: url("../images/svg/blob#{$i}.svg");
+        z-index: -1;
+        transform: translate(-calc(percentage(random(100))/100), -calc(percentage(random(100))/100)) ;
+        -webkit-transform: translate(-calc(percentage(random(100))/100), -calc(percentage(random(100))/100)) ;
+        -moz-transform: translate(-calc(percentage(random(100))/100), -calc(percentage(random(100))/100)) ;
+        -ms-transform: translate(-calc(percentage(random(100))/100), -calc(percentage(random(100))/100)) ;
+        -o-transform: translate(-calc(percentage(random(100))/100), -calc(percentage(random(100))/100)) ;
+        }
+    }
+}
+
+@mixin inline {
+    display: flex;
+    align-items: center;
+}
